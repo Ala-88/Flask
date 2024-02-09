@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="{{ url_for ('static', filename='css/style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Please select your choice!</h1>
+    <p>User's Choice: </p>
+    <div class="btn">
+        <button onclick="playGame('rock')">👊</button>
+        <button onclick="playGame('paper')">✋</button>
+        <button onclick="playGame('scissors')">✌️</button>
+    </div>
+    <h2 id="result"></h2>
+    <h3 id="user">User</h3>
+    <h3 id="computer">Computer</h3>
+    <script src="{{url_for('static',filename='javaScript/main.js')}}"></script>
+</body>
+</html>
